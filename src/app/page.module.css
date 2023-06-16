@@ -1,5 +1,5 @@
 .main {
-  max-width: 1440px;
+  max-width: 1920px;
   /* height: auto; */
   background-color: burlywood;
   margin: 0 auto;
@@ -50,6 +50,7 @@
 .sectionOne{
   height: auto;
   margin: auto;
+  margin-bottom: 10rem;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
@@ -97,4 +98,42 @@
 
   border-radius: 8px;
   background: var(--color-button-dark);
+}
+
+.bar {
+  margin: 10rem 37rem 10rem 37rem;
+}
+
+.titleBar {
+  display: flex;
+  gap:2.4rem;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.titleBar hr {
+  width: 100%;
+  height: 0.2rem; 
+  background-color:var(--line-color);
+  border-width: 0;
+}
+
+.bar h3 {
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  color: var(--font-color);
+  flex: none;
+}
+
+.barImg {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.barLogos {
+  width: calc((100% / 5) - 2rem + (2rem / 5));
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { DarkButton } from '../../components/button-dark'
+import { Bar } from '../../components/bar'
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <br></br>
+
+      <Bar></Bar>
     </main>
   )
 }

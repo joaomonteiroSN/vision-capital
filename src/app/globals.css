@@ -4,6 +4,7 @@
   --font-primary: 'Poppins', 'sans-serif';
   --font-color: #23155B;
   --color-button-dark: #8053FF;
+  --line-color:  #F4F5F4;
 }
 
 h1, p {
@@ -30,6 +31,6 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 62.5%;
 }
