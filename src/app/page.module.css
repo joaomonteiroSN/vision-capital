@@ -1,6 +1,6 @@
 .main {
   max-width: 1440px;
-  height: 100vh;
+  /* height: auto; */
   background-color: burlywood;
   margin: 0 auto;
 
@@ -10,7 +10,7 @@
 /* header */
 .header {
   background: grey;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .center {
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 60px;
+  gap: 6rem;
   color: var(--font-color);
   list-style-type: none;
 }
@@ -32,14 +32,14 @@
 .links {
   display: flex;
   justify-content: flex-end;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .click {
   font-family: var(--font-primary);
   
-  padding: 4px;
-  font-size: 16px;
+  padding: 0.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 28px;
 }
@@ -48,36 +48,40 @@
 /* Section - 1 */
 
 .sectionOne{
-  height: 596px;
+  height: auto;
   margin: auto;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: fill;
   background-position: center center;
 
-  padding: 10px;
+  padding: 1rem;
+}
 
+.mainContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin: 16.8rem 38.5rem 16.8rem 38.5rem;
 }
 
 .title {
   font-weight: 700;
-  font-size: 64px;
-  line-height: 96px;
+  font-size: 6.4rem;
+  line-height: 9.6rem;
 }
 
 .pTitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 36px;
 }
 
 .buttonsTitle {
   display: flex;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 /* Components Styles */
@@ -86,10 +90,10 @@
   font-family: var(--font-primary);
   font-weight: 500;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
   
-  padding: 12px 24px 12px 24px;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
 
   border-radius: 8px;
   background: var(--color-button-dark);

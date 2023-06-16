@@ -21,11 +21,13 @@ export default function Home() {
       </header>
 
       <div className={styles.sectionOne}>
-        <h1 className={styles.title}>Vision Capital</h1>
-        <p className={styles.pTitle}>The right way to fund and incubate your DeFi startup</p>
-        <div className={styles.buttonsTitle}>
-          <DarkButton></DarkButton>
-          <DarkButton></DarkButton>
+        <div className={styles.mainContent}>
+          <h1 className={styles.title}>Vision Capital</h1>
+          <p className={styles.pTitle}>The right way to fund and incubate your DeFi startup</p>
+          <div className={styles.buttonsTitle}>
+            <DarkButton></DarkButton>
+            <DarkButton></DarkButton>
+          </div>
         </div>
       </div>
     </main>
