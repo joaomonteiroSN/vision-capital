@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { DarkButton } from '../../components/button-dark'
 import { Bar } from '../../components/bar'
+import logos from '../../data'
 
 export default function Home() {
   return (
@@ -34,7 +35,8 @@ export default function Home() {
 
       <br></br>
 
-      <Bar></Bar>
+      <Bar logos={logos}></Bar>
+
     </main>
   )
 }

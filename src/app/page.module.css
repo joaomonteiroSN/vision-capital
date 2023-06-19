@@ -134,6 +134,6 @@
   align-items: center;
 }
 
-.barLogos {
+.barImg img {
   width: calc((100% / 5) - 2rem + (2rem / 5));
 }
