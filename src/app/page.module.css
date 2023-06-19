@@ -48,8 +48,7 @@
 
 .sectionOne {
   height: auto;
-  margin: auto;
-  margin-bottom: 10rem;
+  margin: 0rem 24rem 10rem 24rem;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
@@ -88,6 +87,93 @@
 }
 
 /* Section 1 end */
+
+/* Section 2 */
+
+.sectionTwo {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem 37rem 10rem 37rem;
+}
+
+.sectionTwo h2 {
+  width: 50%;
+  padding-right: 10rem;
+}
+
+.emphasis {
+  color: var(--color-button-dark);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  letter-spacing: 0.02em;
+}
+
+.cardPurple {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cardPurple ul {
+  list-style-type: none;
+}
+
+.cardPurple p,
+.cardPurple li {
+  font-family: var(--font-primary);
+}
+
+.cardPurple li {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1.2rem;
+  color: var(--color-button-dark);
+  line-height: 2.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+
+  box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
+  border-radius: 8px;
+}
+
+.cardPurple p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  padding-right: 15rem;
+}
+
+/* Section 2 end */
+
+/* Section 3 */
+
+.mainContentTwo, .mainContentThree {
+  margin: 20rem 37rem 20rem 37rem;
+}
+
+.titleSection p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-right: 56.4rem;
+  margin: 1.2rem 0 2rem 0;
+}
+
+.sectionThreeButtons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Section 3 end */
+
+/* Section  4 */
+
+
+
+/* Section 4 end */
 
 /* Components Styles */
 
@@ -144,68 +230,53 @@
   width: calc((100% / 5) - 2rem + (2rem / 5));
 }
 
-.subtitle {}
+/* toDocard */
 
-.sectionTwo {
-  width: auto;
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  margin: 2rem 0 4rem 0;
+}
+
+.cardToDo {
   display: flex;
-  justify-content: space-between;
-  margin: 10rem 13rem 10rem 13rem;
-}
-
-.sectionTwo h2 {
-  width: 50%;
-  font-family: var(--font-primary);
-  color: var(--font-color);
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 6.4rem;
-  letter-spacing: 0.02em;
-
-  padding-right: 10rem;
-}
-
-.emphasis {
-  color: var(--color-button-dark);
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 6.4rem;
-  letter-spacing: 0.02em;
-}
-
-.cardPurple {
-  display: flex;
-  flex-direction: column;
+  padding: 2.4rem;
   gap: 1.2rem;
-}
-
-.cardPurple ul {
-  list-style-type: none;
-}
-
-.cardPurple p,
-.cardPurple li {
-  font-family: var(--font-primary);
-}
-
-.cardPurple li {
-  /* border: 1px solid red; */
-  display: flex;
-  gap: 1.2rem;
-  color: var(--color-button-dark);
-  line-height: 2.8rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  
-  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
-  
   box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
   border-radius: 8px;
 }
 
-.cardPurple p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.8rem;
-  padding-right: 15rem;
+.cardToDo img {
+  width: 2.4rem;
+  height: 2.4rem;
 }
+
+.cardToDo p {
+  font-size: 1.6rem;
+}
+
+.cardToDo spam {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--spam-card-color);
+}
+
+/* .cardToDo li {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.2rem;
+  justify-content: flex-end;
+  width: 49%;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--font-color);
+
+  box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
+  border-radius: 8px;
+} */

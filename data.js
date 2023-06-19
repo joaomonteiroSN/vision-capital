@@ -43,3 +43,38 @@ export const cardInfo = [
         description: "Result: your token collapses. Everyone goes home."
     }
 ]
+
+// export const toDoCardInfo = [
+//     {
+//         info:"Decentralized investments"
+//     },
+//     {
+//         info:"Access to professional investors"
+//     },
+//     {
+//         info:"Exchange relations"
+//     },
+//     {
+        
+//         info:"Staking"
+//     },
+//     {
+//         info:"Product-market fit analysis"
+//     },
+//     {
+//         info:"Detailed tokenomics"
+        
+//     },
+//     {
+//         info:"Smart contract audit"
+        
+//     },
+//     {
+//         info:"Community-building and social media marketing"
+        
+//     },
+//     {
+//         info:"White Paper, blog, and media content from the best authors"
+        
+//     },
+// ]
