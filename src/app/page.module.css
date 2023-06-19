@@ -1,15 +1,13 @@
 .main {
   max-width: 1920px;
   /* height: auto; */
-  background-color: burlywood;
+  background-color: white;
   margin: 0 auto;
-
-  border: 1px solid red;
 }
 
 /* header */
 .header {
-  background: grey;
+  background: white;
   padding: 1rem;
 }
 
@@ -37,17 +35,18 @@
 
 .click {
   font-family: var(--font-primary);
-  
+
   padding: 0.4rem;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 28px;
 }
+
 /* header-end */
 
 /* Section - 1 */
 
-.sectionOne{
+.sectionOne {
   height: auto;
   margin: auto;
   margin-bottom: 10rem;
@@ -55,6 +54,7 @@
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center center;
+  background-color: #FBFAFF;
 
   padding: 1rem;
 }
@@ -75,6 +75,8 @@
 }
 
 .pTitle {
+  margin-top: 0.8rem;
+  margin-bottom: 4rem;
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 36px;
@@ -85,6 +87,8 @@
   gap: 1.2rem;
 }
 
+/* Section 1 end */
+
 /* Components Styles */
 
 .darkButton {
@@ -93,10 +97,12 @@
   line-height: 28px;
   font-size: 1.6rem;
   color: white;
-  
+
+
   padding: 1.2rem 2.4rem 1.2rem 2.4rem;
 
   border-radius: 8px;
+  border: none;
   background: var(--color-button-dark);
 }
 
@@ -106,15 +112,15 @@
 
 .titleBar {
   display: flex;
-  gap:2.4rem;
+  gap: 2.4rem;
   align-items: center;
   margin-bottom: 4.8rem;
 }
 
 .titleBar hr {
   width: 100%;
-  height: 0.2rem; 
-  background-color:var(--line-color);
+  height: 0.2rem;
+  background-color: var(--line-color);
   border-width: 0;
 }
 
@@ -136,4 +142,70 @@
 
 .barImg img {
   width: calc((100% / 5) - 2rem + (2rem / 5));
+}
+
+.subtitle {}
+
+.sectionTwo {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem 13rem 10rem 13rem;
+}
+
+.sectionTwo h2 {
+  width: 50%;
+  font-family: var(--font-primary);
+  color: var(--font-color);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  letter-spacing: 0.02em;
+
+  padding-right: 10rem;
+}
+
+.emphasis {
+  color: var(--color-button-dark);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  letter-spacing: 0.02em;
+}
+
+.cardPurple {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cardPurple ul {
+  list-style-type: none;
+}
+
+.cardPurple p,
+.cardPurple li {
+  font-family: var(--font-primary);
+}
+
+.cardPurple li {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1.2rem;
+  color: var(--color-button-dark);
+  line-height: 2.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+  
+  box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
+  border-radius: 8px;
+}
+
+.cardPurple p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  padding-right: 15rem;
 }

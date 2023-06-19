@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import logos from '../../data'
 import styles from './page.module.css'
 import { DarkButton } from '../../components/button-dark'
 import { Bar } from '../../components/bar'
-import logos from '../../data'
+import { Card } from '../../components/cards'
 
 export default function Home() {
   return (
@@ -36,6 +37,15 @@ export default function Home() {
       <br></br>
 
       <Bar logos={logos}></Bar>
+
+      <br></br>
+
+      <div className={styles.sectionTwo}>
+        <h2>Traditional Fundraising
+          <spam className={styles.emphasis}> Doesn't Work </spam>
+          in DeFi</h2>
+        <Card></Card>
+      </div>
 
     </main>
   )

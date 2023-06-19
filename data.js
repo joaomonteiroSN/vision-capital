@@ -20,3 +20,26 @@ export const logos = [
         alternative: "payoneer logo"
     }
 ]
+
+export const cardInfo = [
+    {
+        id: "01",
+        description: "Without a big budget, it's hard to approach venture investors"
+    },
+    {
+        id: "02",
+        description: "VCs don't care about your DeFi idea – only their gains"
+    },
+    {
+        id: "03",
+        description: "They force you into selling your tokens at a huge discount…"
+    },
+    {
+        id: "04",
+        description: "...Then dump them at the first opportunity"
+    },
+    {
+        id: "05",
+        description: "Result: your token collapses. Everyone goes home."
+    }
+]
