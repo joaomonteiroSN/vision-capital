@@ -21,6 +21,29 @@ export const logos = [
     }
 ]
 
+export const logosTwo = [
+    {
+        src: "bur-logo.svg",
+        alternative: "burberry logo"
+    },
+    {
+        src: "google-logo.svg",
+        alternative: "google logo"
+    },
+    {
+        src: "sony-logo.svg",
+        alternative: "Sony logo"
+    },
+    {
+        src: "ikea-logo.svg",
+        alternative: "ikea logo"
+    },
+    {
+        src: "nektar-logo.svg",
+        alternative: "Nektar logo"
+    }
+]
+
 export const cardInfo = [
     {
         id: "01",

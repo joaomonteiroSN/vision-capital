@@ -6,28 +6,31 @@
   --color-button-dark: #8053FF;
   --line-color: #F4F5F4;
   --spam-card-color: #928CAB;
+  --gray-light-p: #D4CDEF;
 }
 
 * {
+  /* border: 1px solid red; */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 62.5%;
   font-family: var(--font-primary);
-  /* border: 1px solid red; */
-}
-
-h1,
-p {
   color: var(--font-color);
 }
+
 
 h2 {
-  color: var(--font-color);
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.4rem;
   letter-spacing: 0.02em;
+}
+
+p {
+  font-weight: 400;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
 }
 
 spam {
@@ -37,6 +40,13 @@ spam {
   line-height: 28px;
 
   color: var(--color-button-dark);
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray-light-p);
 }
 
 html,
@@ -50,6 +60,9 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--gray-light-p);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }

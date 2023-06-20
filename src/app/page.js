@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logos from '../../data'
+import { logosTwo } from '../../data'
 import styles from './page.module.css'
 import { DarkButton } from '../../components/button-dark'
 import { Bar } from '../../components/bar'
@@ -100,8 +101,72 @@ export default function Home() {
             <ToDoCard p="Yield farming rewards in PIE" spam="(up to 100% a year)"></ToDoCard>
           </div>
 
-            <DarkButton></DarkButton>
+          <DarkButton></DarkButton>
 
+        </div>
+
+        <div className={styles.sectionFive}>
+          <img className={styles.imgSectionFive} src='guy.svg'></img>
+
+          <br></br>
+
+          <div className={styles.mainContentFour}>
+            <img src='logo-full.svg'></img>
+            <h2>Brought to you by DeFiPie</h2>
+            <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
+            <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
+          </div>
+
+
+        </div>
+
+        <br></br>
+
+        <Bar logos={logosTwo}></Bar>
+
+        <br></br>
+
+        <div className={styles.sectionSix}>
+          {/* <img src="bg-two.svg" className={styles.imgSectionSix}></img> */}
+
+          <div className={styles.mainSectionSix}>
+            <div className={styles.leftSide}>
+              <div className={styles.titleMainSix}>
+                <spam>Join</spam>
+                <h2>Vision Capital and get funded</h2>
+                <p>We'll get back to you within 24 hours</p>
+              </div>
+              <form className={styles.formMain}>
+                <div className={styles.field}>
+                  <label for="pName">How is your project called?</label>
+                  <input type='text' id='pName' name='pName'></input>
+                  <label for="about">Please tell us a few words about the project</label>
+                  <input type='text' id='about' name='about'></input>
+                </div>
+                <div className={styles.field}>
+                  <label for="email">Your Email</label>
+                  <input type='email' id='email' name='email'></input>
+                  <label for="teleName">Telegram name</label>
+                  <input type='text' id='teleName' name='teleName'></input>
+                </div>
+              </form>
+              <DarkButton></DarkButton>
+            </div>
+            <div className={styles.rightSide}>
+
+              <div className={styles.socialBar}>
+                <img src='face-icon.svg'></img>
+                <img src='tweet-icon.svg'></img>
+                <img src='tele-icon.svg'></img>
+                <img src='github-icon.svg'></img>
+              </div>
+              <div className={styles.contact}>
+                <a>hello@visioncapital.com</a>
+                <a>Join us on Telegram</a>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
 

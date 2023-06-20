@@ -1,6 +1,5 @@
 .main {
   max-width: 1920px;
-  /* height: auto; */
   background-color: white;
   margin: 0 auto;
 }
@@ -34,8 +33,6 @@
 }
 
 .click {
-  font-family: var(--font-primary);
-
   padding: 0.4rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -120,13 +117,7 @@
   list-style-type: none;
 }
 
-.cardPurple p,
 .cardPurple li {
-  font-family: var(--font-primary);
-}
-
-.cardPurple li {
-  /* border: 1px solid red; */
   display: flex;
   gap: 1.2rem;
   color: var(--color-button-dark);
@@ -141,9 +132,7 @@
 }
 
 .cardPurple p {
-  font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2.8rem;
   padding-right: 15rem;
 }
 
@@ -151,13 +140,12 @@
 
 /* Section 3 */
 
-.mainContentTwo, .mainContentThree {
+.mainContentTwo,
+.mainContentThree {
   margin: 20rem 37rem 20rem 37rem;
 }
 
 .titleSection p {
-  font-size: 1.8rem;
-  font-weight: 400;
   padding-right: 56.4rem;
   margin: 1.2rem 0 2rem 0;
 }
@@ -169,16 +157,134 @@
 
 /* Section 3 end */
 
-/* Section  4 */
+/* Section  5 */
 
 
+.imgSectionFive {
+  position: absolute;
+  left: 0;
+  margin-right: 133rem;
+  border-radius: 0 20rem 20rem 0;
+}
 
-/* Section 4 end */
+.mainContentFour {
+  margin: 12.7rem 49rem 0 59rem;
+  padding-left: 26rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.mainContentFour img {
+  margin: 0 0 1.6rem 0;
+}
+
+.mainContentFour h2 {
+  margin: 0 0 5.2rem 0;
+  padding-right: 16.5rem;
+}
+
+.mainContentFour p:first-of-type {
+  margin-bottom: 8rem;
+}
+
+/* Section 5 end */
+
+/* Section 6 */
+
+.sectionSix {
+  background-color: var(--font-color);
+  background-image: url("../../public/bg-two.svg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  border-radius: 25rem 0 0 0;
+  padding: 17.9rem 37rem 17.9rem 37rem;
+
+}
+
+.mainSectionSix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide {
+  width: 59.3%;
+}
+
+.imgSectionSix {
+  opacity: 0.2;
+}
+
+.mainSectionSix h2 {
+  color: white;
+}
+
+.mainSectionSix p {
+  color: var(--gray-light-p);
+}
+
+.titleMainSix {
+  padding-right: 26.3rem;
+}
+
+.titleMainSix spam {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  letter-spacing: 0.02em;
+}
+
+.titleMainSix h2 {
+  margin-bottom: 1.2rem;
+}
+
+.formMain {
+  display: flex;
+  gap: 2rem;
+  margin: 6.4rem 0 4rem 0;
+}
+
+.field {
+  width: 50%;
+}
+
+.field input:first-of-type {
+  margin-bottom: 2.4rem;
+}
+
+.formMain input {
+  padding: 1.4rem 1.2rem;
+  border-radius: 0.8rem;
+  border: 2px solid #F4F5F4;
+  width: 100%;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2.4rem;
+  margin-top: auto;
+}
+
+.socialBar,
+.contact {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact {
+  gap: 4rem;
+}
+
+.contact a {
+  text-decoration-line: underline;
+}
+
+/* Section 6 end */
 
 /* Components Styles */
 
 .darkButton {
-  font-family: var(--font-primary);
   font-weight: 500;
   line-height: 28px;
   font-size: 1.6rem;

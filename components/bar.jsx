@@ -1,4 +1,5 @@
 import { logos } from '../data';
+import { logosTwo } from '../data';
 import styles from '../src/app/page.module.css'
 
 
