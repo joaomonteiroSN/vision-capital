@@ -1,7 +1,7 @@
 import styles from '../src/app/page.module.css'
 
-export function DarkButton() {
+export function LightButton(props) {
     return (
-      <button className={styles.darkButton}>Join Now</button>
+      <button className={styles.lightButton}>{props.s}</button>
     );
 }

@@ -35,8 +35,8 @@
 .click {
   padding: 0.4rem;
   font-size: 1.6rem;
-  font-weight: 500;
   line-height: 28px;
+  color: var(--font-color);
 }
 
 /* header-end */
@@ -81,6 +81,11 @@
 .buttonsTitle {
   display: flex;
   gap: 1.2rem;
+}
+
+.buttonsTitle button {
+  /* width: 49%; */
+  font-size: 1.8rem;
 }
 
 /* Section 1 end */
@@ -226,7 +231,7 @@
   padding-right: 26.3rem;
 }
 
-.titleMainSix spam {
+.titleMainSix span {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.4rem;
@@ -284,12 +289,13 @@
 
 /* Components Styles */
 
-.darkButton {
+/* Buttons */
+
+.darkButton, .lightButton {
   font-weight: 500;
   line-height: 28px;
   font-size: 1.6rem;
   color: white;
-
 
   padding: 1.2rem 2.4rem 1.2rem 2.4rem;
 
@@ -297,6 +303,15 @@
   border: none;
   background: var(--color-button-dark);
 }
+
+.lightButton {
+  border: 1px solid var(--color-button-dark);
+  color: var(--color-button-dark);
+
+  background-color: white;
+}
+
+
 
 .bar {
   margin: 10rem 37rem 10rem 37rem;
@@ -361,13 +376,14 @@
 
 .cardToDo p {
   font-size: 1.6rem;
+  font-weight: 500;
 }
 
-.cardToDo spam {
+.cardToDo span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.4rem;
-  color: var(--spam-card-color);
+  color: var(--span-card-color);
 }
 
 /* .cardToDo li {

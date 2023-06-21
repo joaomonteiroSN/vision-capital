@@ -5,7 +5,7 @@
   --font-color: #23155B;
   --color-button-dark: #8053FF;
   --line-color: #F4F5F4;
-  --spam-card-color: #928CAB;
+  --span-card-color: #928CAB;
   --gray-light-p: #D4CDEF;
 }
 
@@ -33,7 +33,7 @@ p {
   font-size: 1.8rem;
 }
 
-spam {
+span {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
