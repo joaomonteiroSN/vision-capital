@@ -26,6 +26,8 @@ export default function Home() {
         </div>
       </header>
 
+      <br></br>
+
       <div className={styles.sectionOne}>
         <div className={styles.mainContent}>
           <h1 className={styles.title}>Vision Capital</h1>
@@ -105,68 +107,69 @@ export default function Home() {
           <DarkButton s="Become an Investor"></DarkButton>
 
         </div>
+      </div>
 
-        <div className={styles.sectionFive}>
-          <img className={styles.imgSectionFive} src='guy.svg'></img>
+      <br></br>
 
-          <br></br>
+      <div className={styles.sectionFive}>
+        <img className={styles.imgSectionFive} src='guy.svg'></img>
 
-          <div className={styles.mainContentFour}>
-            <img src='logo-full.svg'></img>
-            <h2>Brought to you by DeFiPie</h2>
-            <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
-            <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
-          </div>
+        <br></br>
 
-
+        <div className={styles.mainContentFour}>
+          <img src='logo-full.svg'></img>
+          <h2>Brought to you by DeFiPie</h2>
+          <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
+          <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
         </div>
 
-        <br></br>
 
-        <Bar logos={logosTwo}></Bar>
+      </div>
 
-        <br></br>
+      <br></br>
 
-        <div className={styles.sectionSix}>
-          {/* <img src="bg-two.svg" className={styles.imgSectionSix}></img> */}
+      <Bar logos={logosTwo}></Bar>
 
-          <div className={styles.mainSectionSix}>
-            <div className={styles.leftSide}>
-              <div className={styles.titleMainSix}>
-                <span>Join</span>
-                <h2>Vision Capital and get funded</h2>
-                <p>We'll get back to you within 24 hours</p>
-              </div>
-              <form className={styles.formMain}>
-                <div className={styles.field}>
-                  <label for="pName">How is your project called?</label>
-                  <input type='text' id='pName' name='pName'></input>
-                  <label for="about">Please tell us a few words about the project</label>
-                  <input type='text' id='about' name='about'></input>
-                </div>
-                <div className={styles.field}>
-                  <label for="email">Your Email</label>
-                  <input type='email' id='email' name='email'></input>
-                  <label for="teleName">Telegram name</label>
-                  <input type='text' id='teleName' name='teleName'></input>
-                </div>
-              </form>
-              <DarkButton s="send"></DarkButton>
+      <br></br>
+
+      <div className={styles.sectionSix}>
+        
+        <div className={styles.mainSectionSix}>
+          <div className={styles.leftSide}>
+            <div className={styles.titleMainSix}>
+              <span>Join</span>
+              <h2>Vision Capital and get funded</h2>
+              <p>We'll get back to you within 24 hours</p>
             </div>
-            <div className={styles.rightSide}>
-
-              <div className={styles.socialBar}>
-                <img src='face-icon.svg'></img>
-                <img src='tweet-icon.svg'></img>
-                <img src='tele-icon.svg'></img>
-                <img src='github-icon.svg'></img>
+            <form className={styles.formMain}>
+              <div className={styles.field}>
+                <label for="pName">How is your project called?</label>
+                <input type='text' id='pName' name='pName'></input>
+                <label for="about">Please tell us a few words about the project</label>
+                <input type='text' id='about' name='about'></input>
               </div>
-              <div className={styles.contact}>
-                <a>hello@visioncapital.com</a>
-                <a>Join us on Telegram</a>
+              <div className={styles.field}>
+                <label for="email">Your Email</label>
+                <input type='email' id='email' name='email'></input>
+                <label for="teleName">Telegram name</label>
+                <input type='text' id='teleName' name='teleName'></input>
               </div>
+            </form>
+            <DarkButton s="send"></DarkButton>
+          </div>
+          <div className={styles.rightSide}>
 
+            <div className={styles.socialBar}>
+              <img src='face-icon.svg'></img>
+              <img src='tweet-icon.svg'></img>
+              <img src='tele-icon.svg'></img>
+              <img src='github-icon.svg'></img>
             </div>
+            <div className={styles.contact}>
+              <a>hello@visioncapital.com</a>
+              <a>Join us on Telegram</a>
+            </div>
+
           </div>
         </div>
       </div>

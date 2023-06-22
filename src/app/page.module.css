@@ -7,7 +7,7 @@
 /* header */
 .header {
   background: white;
-  padding: 1rem;
+  margin: 2.4rem 25rem 2.4rem 25rem;
 }
 
 .center {
@@ -45,7 +45,7 @@
 
 .sectionOne {
   height: auto;
-  margin: 0rem 24rem 10rem 24rem;
+  margin: 0rem 25rem 10rem 25rem;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
@@ -145,9 +145,20 @@
 
 /* Section 3 */
 
+.sectionThree {
+  background-color: #FBFAFF;
+  background-image: url("../../public/bg-three.svg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  border-radius: 25rem 0 0 0;
+  width: 100%;
+  margin-top: 10rem;
+  padding: 20rem 0 20rem 0;
+}
+
 .mainContentTwo,
 .mainContentThree {
-  margin: 20rem 37rem 20rem 37rem;
+  margin: 0 37rem 0 37rem;
 }
 
 .titleSection p {
@@ -164,8 +175,28 @@
 
 /* Section 3 end */
 
+/* Section 4 */
+
+.sectionFour {
+  background-color: #FBFAFF;
+  background-image: url("../../public/bg-three.svg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  border-radius: 25rem 0 0 0;
+  width: 100%;
+
+  border-radius: 0 25rem 0 0;
+  width: 100%;
+  padding: 20rem 0 20rem 0;
+}
+
+/* Section 4 end */
+
 /* Section  5 */
 
+.sectionFive {
+  margin-bottom: 20rem;
+}
 
 .imgSectionFive {
   position: absolute;
@@ -200,10 +231,11 @@
 
 .sectionSix {
   background-color: var(--font-color);
-  background-image: url("../../public/bg-two.svg");
+  background-image: opacity(0.5),("../../public/bg-two.svg");
   background-repeat: no-repeat;
   background-size: fill;
   border-radius: 25rem 0 0 0;
+  margin-top: 10rem;
   padding: 17.9rem 37rem 17.9rem 37rem;
 
 }
@@ -367,6 +399,7 @@
   display: flex;
   padding: 2.4rem;
   gap: 1.2rem;
+  background: white;
   box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
   border-radius: 8px;
 }
