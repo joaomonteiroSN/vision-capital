@@ -151,7 +151,7 @@ export default function Home() {
                   <input type='text' id='teleName' name='teleName'></input>
                 </div>
               </form>
-              <DarkButton></DarkButton>
+              <DarkButton s="send"></DarkButton>
             </div>
             <div className={styles.rightSide}>
 

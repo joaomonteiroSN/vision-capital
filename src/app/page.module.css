@@ -79,12 +79,12 @@
 }
 
 .buttonsTitle {
-  display: flex;
+  display: grid;
   gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .buttonsTitle button {
-  /* width: 49%; */
   font-size: 1.8rem;
 }
 
@@ -156,8 +156,10 @@
 }
 
 .sectionThreeButtons {
-  display: flex;
+  display: grid;
   gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 70.4rem;
 }
 
 /* Section 3 end */
