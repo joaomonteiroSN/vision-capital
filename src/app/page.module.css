@@ -1,23 +1,36 @@
 .main {
-  max-width: 1920px;
+  max-width: 1440px;
   background-color: white;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* header */
 .header {
-  background: white;
-  margin: 2.4rem 25rem 2.4rem 25rem;
+  max-width: 1440px;
 }
 
-.center {
-  max-width: 1420px;
-  margin: 0 auto;
+
+.nav {
+  /* background: red; */
   display: flex;
+  padding: 0 1rem;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 
-.navButtons {
+.buttonsNav {
+  gap: 6rem;
+  display: flex; 
+  align-items: center;
+}
+
+.aNav {
+  display: flex;
+  gap: 2.4rem;
+}
+
+
+/* .navButtons {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -37,7 +50,7 @@
   font-size: 1.6rem;
   line-height: 28px;
   color: var(--font-color);
-}
+} */
 
 /* header-end */
 
@@ -45,7 +58,7 @@
 
 .sectionOne {
   height: auto;
-  margin: 0rem 25rem 10rem 25rem;
+  /* margin: 0rem 25rem 10rem 25rem; */
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
@@ -61,7 +74,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 16.8rem 38.5rem 16.8rem 38.5rem;
+  /* margin: 16.8rem 38.5rem 16.8rem 38.5rem; */
 }
 
 .title {
@@ -327,7 +340,7 @@
 
 .darkButton, .lightButton {
   font-weight: 500;
-  line-height: 28px;
+  line-height: 2.8rem;
   font-size: 1.6rem;
   color: white;
 
@@ -345,7 +358,7 @@
   background-color: white;
 }
 
-
+/* bar */
 
 .bar {
   margin: 10rem 37rem 10rem 37rem;
@@ -420,20 +433,3 @@
   line-height: 2.4rem;
   color: var(--span-card-color);
 }
-
-/* .cardToDo li {
-  padding: 2.4rem;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 1.2rem;
-  justify-content: flex-end;
-  width: 49%;
-
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2.4rem;
-  color: var(--font-color);
-
-  box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
-  border-radius: 8px;
-} */

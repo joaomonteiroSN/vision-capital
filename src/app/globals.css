@@ -36,8 +36,8 @@ p {
 span {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 
   color: var(--color-button-dark);
 }
@@ -47,12 +47,6 @@ label {
   font-size: 14px;
   line-height: 24px;
   color: var(--gray-light-p);
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {

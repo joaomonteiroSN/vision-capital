@@ -12,16 +12,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <div className={styles.center}>
+        <div className={styles.nav}>
           <img src='Logo.svg' className={styles.logoStyle}></img>
-          <div className={styles.navButtons}>
-            <div className={styles.links}>
+          <div className={styles.buttonsNav}>
+
+            <div className={styles.aNav}>
               <a className={styles.click} href='_blank'>For Projects</a>
               <a className={styles.click} href='_blank'>For Investors</a>
             </div>
-            <div>
-              <DarkButton s="Join Now"></DarkButton>
-            </div>
+            <DarkButton s="Join Now"></DarkButton>
           </div>
         </div>
       </header>
