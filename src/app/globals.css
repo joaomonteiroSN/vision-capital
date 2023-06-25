@@ -2,11 +2,11 @@
 
 :root {
   --font-primary: 'Poppins', 'sans-serif';
-  --font-color: #23155B;
-  --color-button-dark: #8053FF;
+  --blue-dark: #23155B;
+  --purple-dark: #8053FF;
   --line-color: #F4F5F4;
-  --span-card-color: #928CAB;
-  --gray-light-p: #D4CDEF;
+  --purple-light: #928CAB;
+  --gray-light: #D4CDEF;
 }
 
 * {
@@ -16,7 +16,7 @@
   margin: 0;
   font-size: 62.5%;
   font-family: var(--font-primary);
-  color: var(--font-color);
+  color: var(--blue-dark);
 }
 
 

@@ -1,4 +1,4 @@
-.main {
+.page {
   max-width: 1440px;
   background-color: white;
   margin: auto;
@@ -7,50 +7,25 @@
 /* header */
 .header {
   max-width: 1440px;
-}
-
-
-.nav {
-  /* background: red; */
   display: flex;
   padding: 0 1rem;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
-.buttonsNav {
+.nav {
+  flex-wrap: wrap;
+  display: flex;
   gap: 6rem;
-  display: flex; 
   align-items: center;
+  
 }
 
 .aNav {
+  flex-wrap: wrap;
   display: flex;
   gap: 2.4rem;
 }
-
-
-/* .navButtons {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 6rem;
-  color: var(--font-color);
-  list-style-type: none;
-}
-
-.links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2.4rem;
-}
-
-.click {
-  padding: 0.4rem;
-  font-size: 1.6rem;
-  line-height: 28px;
-  color: var(--font-color);
-} */
 
 /* header-end */
 
@@ -58,14 +33,13 @@
 
 .sectionOne {
   height: auto;
-  /* margin: 0rem 25rem 10rem 25rem; */
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center center;
   background-color: #FBFAFF;
 
-  padding: 1rem;
+  padding: 16.8rem 1rem 16.8rem 1rem;
 }
 
 .mainContent {
@@ -108,17 +82,19 @@
 .sectionTwo {
   width: auto;
   display: flex;
+/* grid-template-columns: 1fr 1fr; */
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10rem 37rem 10rem 37rem;
+  margin: 10rem 13rem 10rem 13rem;
 }
 
 .sectionTwo h2 {
-  width: 50%;
+  /* max-width: 60rem; */
   padding-right: 10rem;
 }
 
 .emphasis {
-  color: var(--color-button-dark);
+  color: var(--purple-dark);
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.4rem;
@@ -129,6 +105,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  max-width: 58rem;
 }
 
 .cardPurple ul {
@@ -138,7 +115,7 @@
 .cardPurple li {
   display: flex;
   gap: 1.2rem;
-  color: var(--color-button-dark);
+  color: var(--purple-dark);
   line-height: 2.8rem;
   font-size: 2.4rem;
   font-weight: 700;
@@ -348,21 +325,17 @@
 
   border-radius: 8px;
   border: none;
-  background: var(--color-button-dark);
+  background: var(--purple-dark);
 }
 
 .lightButton {
-  border: 1px solid var(--color-button-dark);
-  color: var(--color-button-dark);
+  border: 1px solid var(--purple-dark);
+  color: var(--purple-dark);
 
   background-color: white;
 }
 
-/* bar */
-
-.bar {
-  margin: 10rem 37rem 10rem 37rem;
-}
+/* Cards bar */
 
 .titleBar {
   display: flex;
@@ -389,14 +362,16 @@
 
 .barImg {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
-.barImg img {
+/* .barImg img {
   width: calc((100% / 5) - 2rem + (2rem / 5));
-}
+} */
 
 /* toDocard */
 

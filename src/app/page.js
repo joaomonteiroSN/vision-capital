@@ -10,23 +10,20 @@ import { ToDoCard } from '../../components/toDoCard'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.page}>
       <header className={styles.header}>
+        <img src='logo.svg'></img>
         <div className={styles.nav}>
-          <img src='Logo.svg' className={styles.logoStyle}></img>
-          <div className={styles.buttonsNav}>
-
-            <div className={styles.aNav}>
-              <a className={styles.click} href='_blank'>For Projects</a>
-              <a className={styles.click} href='_blank'>For Investors</a>
-            </div>
+          <nav className={styles.aNav}>
+            <a className={styles.click} href='_blank'>For Projects</a>
+            <a className={styles.click} href='_blank'>For Investors</a>
+          </nav>
             <DarkButton s="Join Now"></DarkButton>
-          </div>
         </div>
       </header>
 
       <br></br>
-
+      
       <div className={styles.sectionOne}>
         <div className={styles.mainContent}>
           <h1 className={styles.title}>Vision Capital</h1>
@@ -47,7 +44,8 @@ export default function Home() {
       <div className={styles.sectionTwo}>
         <h2>Traditional Fundraising
           <span className={styles.emphasis}> Doesn't Work </span>
-          in DeFi</h2>
+          in DeFi
+        </h2>
         <Card></Card>
       </div>
 
