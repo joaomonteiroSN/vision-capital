@@ -1,3 +1,4 @@
+
 .page {
   max-width: 1440px;
   background-color: white;
@@ -18,7 +19,7 @@
   display: flex;
   gap: 6rem;
   align-items: center;
-  
+
 }
 
 .aNav {
@@ -80,16 +81,15 @@
 /* Section 2 */
 
 .sectionTwo {
-  width: auto;
   display: flex;
-/* grid-template-columns: 1fr 1fr; */
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10rem 13rem 10rem 13rem;
+  justify-content: center;
+  margin: 10rem 0 10rem 0;
+  padding: 0 13rem 0 13rem;
 }
 
 .sectionTwo h2 {
-  /* max-width: 60rem; */
+  width: 50%;
   padding-right: 10rem;
 }
 
@@ -101,33 +101,34 @@
   letter-spacing: 0.02em;
 }
 
-.cardPurple {
+.cardsDiv {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  max-width: 58rem;
 }
 
-.cardPurple ul {
-  list-style-type: none;
-}
-
-.cardPurple li {
+.cardWrapper {
   display: flex;
   gap: 1.2rem;
-  color: var(--purple-dark);
-  line-height: 2.8rem;
-  font-size: 2.4rem;
-  font-weight: 700;
+  max-width: 58rem;
 
-  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
 
   box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05), 0px 14px 64px -4px rgba(35, 21, 91, 0.05);
   border-radius: 8px;
 }
 
-.cardPurple p {
+.cardWrapper span {
+  color: var(--purple-dark);
+  line-height: 2.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.cardWrapper p {
+  font-size: 1.8rem;
   font-weight: 500;
+  line-height: 2.8rem;
   padding-right: 15rem;
 }
 
@@ -137,30 +138,32 @@
 
 .sectionThree {
   background-color: #FBFAFF;
-  background-image: url("../../public/bg-three.svg");
-  background-repeat: no-repeat;
-  background-size: fill;
   border-radius: 25rem 0 0 0;
   width: 100%;
   margin-top: 10rem;
-  padding: 20rem 0 20rem 0;
 }
 
-.mainContentTwo,
+.background {
+  background-image: url("../../public/bg-three.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100dvw;
+}
+
 .mainContentThree {
-  margin: 0 37rem 0 37rem;
+  margin: 0 13rem 0 13rem;
 }
 
 .titleSection p {
-  padding-right: 56.4rem;
-  margin: 1.2rem 0 2rem 0;
+  /* padding-right: 56.4rem; */
+  /* margin: 1.2rem 0 2rem 0; */
 }
 
 .sectionThreeButtons {
   display: grid;
   gap: 1.2rem;
   grid-template-columns: 1fr 1fr;
-  margin-right: 70.4rem;
+  /* margin-right: 70.4rem; */
 }
 
 /* Section 3 end */
@@ -193,10 +196,12 @@
   left: 0;
   margin-right: 133rem;
   border-radius: 0 20rem 20rem 0;
+  width: 100%;
+  max-width: 59rem;
+  height: auto;
 }
 
 .mainContentFour {
-  margin: 12.7rem 49rem 0 59rem;
   padding-left: 26rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -220,14 +225,13 @@
 /* Section 6 */
 
 .sectionSix {
-  background-color: var(--font-color);
-  background-image: opacity(0.5),("../../public/bg-two.svg");
+  background-color: var(--blue-dark);
+  background-image: opacity(0.5), ("../../public/bg-two.svg");
   background-repeat: no-repeat;
   background-size: fill;
   border-radius: 25rem 0 0 0;
   margin-top: 10rem;
-  padding: 17.9rem 37rem 17.9rem 37rem;
-
+  padding: 17.9rem 13rem 17.9rem 13rem;
 }
 
 .mainSectionSix {
@@ -248,11 +252,11 @@
 }
 
 .mainSectionSix p {
-  color: var(--gray-light-p);
+  color: var(--gray-light);
 }
 
 .titleMainSix {
-  padding-right: 26.3rem;
+  /* padding-right: 26.3rem; */
 }
 
 .titleMainSix span {
@@ -267,17 +271,10 @@
 }
 
 .formMain {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: end;
   gap: 2rem;
-  margin: 6.4rem 0 4rem 0;
-}
-
-.field {
-  width: 50%;
-}
-
-.field input:first-of-type {
-  margin-bottom: 2.4rem;
 }
 
 .formMain input {
@@ -285,6 +282,10 @@
   border-radius: 0.8rem;
   border: 2px solid #F4F5F4;
   width: 100%;
+}
+
+.inputWrapper {
+  align-self: end;
 }
 
 .rightSide {
@@ -297,6 +298,7 @@
 
 .socialBar,
 .contact {
+  flex-wrap: wrap;
   display: flex;
   gap: 3rem;
 }
@@ -312,10 +314,10 @@
 /* Section 6 end */
 
 /* Components Styles */
-
 /* Buttons */
 
-.darkButton, .lightButton {
+.darkButton,
+.lightButton {
   font-weight: 500;
   line-height: 2.8rem;
   font-size: 1.6rem;
@@ -342,6 +344,7 @@
   gap: 2.4rem;
   align-items: center;
   margin-bottom: 4.8rem;
+  padding: 0 13rem 0 13rem;
 }
 
 .titleBar hr {
@@ -368,10 +371,6 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .barImg img {
-  width: calc((100% / 5) - 2rem + (2rem / 5));
-} */
 
 /* toDocard */
 

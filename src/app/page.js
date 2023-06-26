@@ -18,12 +18,12 @@ export default function Home() {
             <a className={styles.click} href='_blank'>For Projects</a>
             <a className={styles.click} href='_blank'>For Investors</a>
           </nav>
-            <DarkButton s="Join Now"></DarkButton>
+          <DarkButton s="Join Now"></DarkButton>
         </div>
       </header>
 
       <br></br>
-      
+
       <div className={styles.sectionOne}>
         <div className={styles.mainContent}>
           <h1 className={styles.title}>Vision Capital</h1>
@@ -46,38 +46,45 @@ export default function Home() {
           <span className={styles.emphasis}> Doesn't Work </span>
           in DeFi
         </h2>
-        <Card></Card>
+        <div className={styles.cardsDiv}>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
       </div>
 
       <br></br>
 
       <div className={styles.sectionThree}>
-        <div className={styles.mainContentTwo}>
-          <div className={styles.titleSection}>
-            <span >— For Projects</span>
-            <h2>Vision is the <span className={styles.emphasis}>answer</span></h2>
-            <p>You have an idea, IncuPie has a plan. We offer everything you need to go from an early-stage idea to a successful exchange listing.</p>
+        <div className={styles.background}>
+          <div className={styles.mainContentThree}>
+            <div className={styles.titleSection}>
+              <span >— For Projects</span>
+              <h2>Vision is the <span className={styles.emphasis}>answer</span></h2>
+              <p>You have an idea, IncuPie has a plan. We offer everything you need to go from an early-stage idea to a successful exchange listing.</p>
+            </div>
+
+            <br></br>
+
+            <div className={styles.cardsWrapper}>
+              <ToDoCard p="Decentralized investments" span="we'll distribute your tokens among our huge and active community"></ToDoCard>
+              <ToDoCard p="Access to professional investors" span="we'll put you in touch with funds and business angels ready to invest larger sums"></ToDoCard>
+              <ToDoCard p="Exchange relations" span="get better terms when listing your token"></ToDoCard>
+              <ToDoCard p="Staking" span="allow users to stake your tokens on DeFiPie and earn rewards"></ToDoCard>
+              <ToDoCard p="Product-market fit analysis"></ToDoCard>
+              <ToDoCard p="Detailed tokenomics"></ToDoCard>
+              <ToDoCard p="Smart contract audit"></ToDoCard>
+              <ToDoCard p="Community-building and social media marketing"></ToDoCard>
+              <ToDoCard p="White Paper, blog, and media content from the best authors"></ToDoCard>
+            </div>
+
+            <div className={styles.sectionThreeButtons}>
+              <DarkButton s="I Need Funding"></DarkButton>
+              <LightButton s="Learn More" ></LightButton>
+            </div>
           </div>
-
-          <br></br>
-
-          <div className={styles.cardsWrapper}>
-            <ToDoCard p="Decentralized investments" span="we'll distribute your tokens among our huge and active community"></ToDoCard>
-            <ToDoCard p="Access to professional investors" span="we'll put you in touch with funds and business angels ready to invest larger sums"></ToDoCard>
-            <ToDoCard p="Exchange relations" span="get better terms when listing your token"></ToDoCard>
-            <ToDoCard p="Staking" span="allow users to stake your tokens on DeFiPie and earn rewards"></ToDoCard>
-            <ToDoCard p="Product-market fit analysis"></ToDoCard>
-            <ToDoCard p="Detailed tokenomics"></ToDoCard>
-            <ToDoCard p="Smart contract audit"></ToDoCard>
-            <ToDoCard p="Community-building and social media marketing"></ToDoCard>
-            <ToDoCard p="White Paper, blog, and media content from the best authors"></ToDoCard>
-          </div>
-
-          <div className={styles.sectionThreeButtons}>
-            <DarkButton s="I Need Funding"></DarkButton>
-            <LightButton s="Learn More" ></LightButton>
-          </div>
-
         </div>
       </div>
 
@@ -108,7 +115,7 @@ export default function Home() {
 
       <br></br>
 
-      <div className={styles.sectionFive}>
+      {/* <div className={styles.sectionFive}>
         <img className={styles.imgSectionFive} src='guy.svg'></img>
 
         <br></br>
@@ -121,7 +128,7 @@ export default function Home() {
         </div>
 
 
-      </div>
+      </div> */}
 
       <br></br>
 
@@ -130,7 +137,7 @@ export default function Home() {
       <br></br>
 
       <div className={styles.sectionSix}>
-        
+
         <div className={styles.mainSectionSix}>
           <div className={styles.leftSide}>
             <div className={styles.titleMainSix}>
@@ -138,24 +145,31 @@ export default function Home() {
               <h2>Vision Capital and get funded</h2>
               <p>We'll get back to you within 24 hours</p>
             </div>
-            <form className={styles.formMain}>
-              <div className={styles.field}>
+            <form className={styles.formMain}>        
+              <div className={styles.inputWrapper}>
                 <label for="pName">How is your project called?</label>
                 <input type='text' id='pName' name='pName'></input>
+              </div>
+
+              <div className={styles.inputWrapper}>
+                <label for="email">Your Email</label>
+                <input type='email' id='email' name='email'></input>
+              </div>
+
+              <div className={styles.inputWrapper}>
                 <label for="about">Please tell us a few words about the project</label>
                 <input type='text' id='about' name='about'></input>
               </div>
-              <div className={styles.field}>
-                <label for="email">Your Email</label>
-                <input type='email' id='email' name='email'></input>
+
+              <div className={styles.inputWrapper}>
                 <label for="teleName">Telegram name</label>
                 <input type='text' id='teleName' name='teleName'></input>
               </div>
+
             </form>
             <DarkButton s="send"></DarkButton>
           </div>
           <div className={styles.rightSide}>
-
             <div className={styles.socialBar}>
               <img src='face-icon.svg'></img>
               <img src='tweet-icon.svg'></img>
