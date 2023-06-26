@@ -19,7 +19,6 @@
   color: var(--blue-dark);
 }
 
-
 h2 {
   font-size: 5.2rem;
   font-weight: 700;
@@ -47,10 +46,6 @@ label {
   font-size: 14px;
   line-height: 24px;
   color: var(--gray-light);
-}
-
-input {
-  display: block;
 }
 
 body {
