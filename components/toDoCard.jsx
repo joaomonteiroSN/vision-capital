@@ -9,7 +9,7 @@ export function ToDoCard(props) {
             <img src="todo.svg" alt="image of checked mark" />
             <div>
                 <p>{props.p}</p>
-                <spam>{props.spam}</spam>
+                <span>{props.span}</span>
             </div>
         </div>
 

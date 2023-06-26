@@ -47,11 +47,11 @@ export default function Home() {
           in DeFi
         </h2>
         <div className={styles.cardsDiv}>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <Card s="01" p="Without a big budget, it's hard to approach venture investors"></Card>
+          <Card s="02" p="VCs don't care about your DeFi idea – only their gains"></Card>
+          <Card s="03" p="They force you into selling your tokens at a huge discount…"></Card>
+          <Card s="04" p="...Then dump them at the first opportunity"></Card>
+          <Card s="05" p="Result: your token collapses. Everyone goes home."></Card>
         </div>
       </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
               </div>
 
             </form>
-            <DarkButton s="send"></DarkButton>
+            <DarkButton s="Send"></DarkButton>
           </div>
           <div className={styles.rightSide}>
             <div className={styles.socialBar}>
