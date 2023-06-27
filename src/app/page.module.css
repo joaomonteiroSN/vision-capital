@@ -136,6 +136,39 @@
   padding-right: 15rem;
 }
 
+@media screen and (max-width:1350px) {
+  .cardWrapper p {
+    padding-right: 12rem;
+  }
+
+  .sectionTwo h2 {
+    padding-right: 12rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .cardsDiv {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 70rem) {
+  .cardWrapper p {
+    padding-right: 0;
+  }
+
+  .sectionTwo h2 {
+    padding-right: 0;
+  }
+}
+
 /* Section 2 end */
 
 /* Section 3 */
@@ -154,9 +187,7 @@
   max-width: 1440px;
   padding: 20rem 0;
   margin: auto;
-  
 }
-
 
 .mainContentThree {
   margin: 0 13rem 0 13rem;
@@ -171,6 +202,14 @@
   margin-bottom: 4rem;
 }
 
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  margin: 2rem 0 4rem 0;
+}
+
 .sectionThreeButtons {
   max-width: 47.6rem;
   display: grid;
@@ -178,6 +217,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 800px) {
+  .cardsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .mainContentThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Section 3 end */
 
 /* Section 4 */
@@ -213,11 +263,8 @@
 
 /* Section  5 */
 
-.sectionFive {
-  margin-bottom: 20rem;
-}
-
-.imgSectionFive {
+.backgroundSectionFive {
+  background-image: url("../../public/guy.svg");
   position: absolute;
   left: 0;
   margin-right: 133rem;
@@ -227,7 +274,11 @@
   height: auto;
 }
 
-.mainContentFour {
+.sectionFive {
+  margin-bottom: 20rem;
+}
+
+.mainContentFive {
   padding-left: 26rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -267,10 +318,8 @@
 
 .mainSectionSix {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   justify-items: center;
-  /* gap: 12.2rem; */
 }
 
 .leftSide {
@@ -287,10 +336,6 @@
 
 .mainSectionSix p {
   color: var(--gray-light);
-}
-
-.titleMainSix {
-  /* padding-right: 26.3rem; */
 }
 
 .titleMainSix span {
@@ -349,6 +394,24 @@
 
 .contact a {
   text-decoration-line: underline;
+}
+
+@media screen and (max-width: 80rem) {
+  .mainSectionSix {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .leftSide {
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width: 45rem) {
+  .formMain {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Section 6 end */
@@ -420,14 +483,6 @@
 
 /* toDocard */
 
-.cardsWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-
-  margin: 2rem 0 4rem 0;
-}
-
 .cardToDo {
   display: flex;
   padding: 2.4rem;
@@ -452,39 +507,4 @@
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--purple-light);
-}
-
-/* Media */ 
-
-@media screen and (max-width:1350px) {
-  .cardWrapper p {
-    padding-right: 12rem;
-  }
-
-  .sectionTwo h2 {
-    padding-right: 14rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .sectionTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .cardsDiv {
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 25rem) {
-  .cardWrapper p {
-    padding-right: none;
-  }
-
-  .sectionTwo h2 {
-    padding-right: 1rem;
-  }
 }

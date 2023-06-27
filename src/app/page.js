@@ -117,20 +117,17 @@ export default function Home() {
 
       <br></br>
 
-      {/* <div className={styles.sectionFive}>
-        <img className={styles.imgSectionFive} src='guy.svg'></img>
-
-        <br></br>
-
-        <div className={styles.mainContentFour}>
-          <img src='logo-full.svg'></img>
-          <h2>Brought to you by DeFiPie</h2>
-          <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
-          <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
+        <div className={styles.backgroundSectionFive}>
         </div>
-
-
-      </div> */}
+      <div className={styles.sectionFive}>
+        <br></br>
+          <div className={styles.mainContentFive}>
+            <img src='logo-full.svg'></img>
+            <h2>Brought to you by DeFiPie</h2>
+            <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
+            <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
+          </div>
+      </div>
 
       <br></br>
 
