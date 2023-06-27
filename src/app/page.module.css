@@ -1,5 +1,5 @@
 .page {
-  max-width: 1440px;
+  max-width: 100dvw;
   background-color: white;
   margin: auto;
 }
@@ -7,6 +7,7 @@
 /* header */
 .header {
   max-width: 1440px;
+  margin: auto;
   display: flex;
   padding: 0 1rem;
   justify-content: space-between;
@@ -33,13 +34,15 @@
 
 .sectionOne {
   height: auto;
+  margin: 0 auto 20rem auto;
+  max-width: 1420px;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center center;
-  background-color: #FBFAFF;
-
-  padding: 16.8rem 1rem 16.8rem 1rem;
+  background-color: #904ebdbe;
+  outline: 1px solid red;
+  padding: 16.8rem 0 16.8rem 0;
 }
 
 .mainContent {
@@ -66,6 +69,7 @@
 .buttonsTitle {
   display: grid;
   gap: 1.2rem;
+  grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -78,17 +82,16 @@
 /* Section 2 */
 
 .sectionTwo {
+  max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20rem 0 20rem 0;
+  justify-content: space-between;
+  margin: 20rem auto;
   padding: 0 13rem 0 13rem;
 }
 
 .sectionTwo h2 {
-  width: 50%;
-  padding-right: 10rem;
+  padding-right: 17rem;
 }
 
 .emphasis {
@@ -101,11 +104,14 @@
 
 .cardsDiv {
   display: flex;
+  align-items: end;
   flex-direction: column;
   gap: 1.2rem;
+  outline: 1px solid red;
 }
 
 .cardWrapper {
+  outline: 1px solid red;
   display: flex;
   gap: 1.2rem;
   max-width: 58rem;
@@ -134,18 +140,23 @@
 
 /* Section 3 */
 
-.sectionThree {
-  background-color: #FBFAFF;
-  border-radius: 25rem 0 0 0;
-  width: 100%;
-  margin: 20rem 0 20rem 0;
-}
-
 .background {
   background-image: url("../../public/bg-three.svg");
+  border-radius: 25rem 0 0 0;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  max-width: cover;
+  background-color: #904ebdbe;
+  width: 100%;
 }
+
+.sectionThree {
+  max-width: 1440px;
+  padding: 20rem 0;
+  margin: auto;
+  
+}
+
 
 .mainContentThree {
   margin: 0 13rem 0 13rem;
@@ -170,6 +181,16 @@
 /* Section 3 end */
 
 /* Section 4 */
+
+.backgroundSectionFour {
+  background-image: url("../../public/bg-four.svg");
+  border-radius: 0 25rem 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: cover;
+  background-color: #904ebdbe;
+  width: 100%;
+}
 
 .sectionFour {
   background-color: #FBFAFF;
@@ -229,13 +250,18 @@
 
 /* Section 6 */
 
-.sectionSix {
-  background-color: var(--blue-dark);
-  background-image: opacity(0.5), ("../../public/bg-two.svg");
-  background-repeat: no-repeat;
-  background-size: fill;
+.backgroundSectionSix {
+  background-image: url("../../public/bg-two.svg");
   border-radius: 25rem 0 0 0;
-  margin-top: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: cover;
+  width: 100%;
+  background-color: var(--blue-dark);
+}
+
+.sectionSix {
+  margin-top: 20rem;
   padding: 17.9rem 13rem 17.9rem 13rem;
 }
 
@@ -353,12 +379,18 @@
 
 /* Cards bar */
 
+.bar {
+  max-width: 1440px;
+  margin: auto;
+  outline: 1px solid red;
+  padding: 0 13rem 0 13rem;
+}
+
 .titleBar {
   display: flex;
   gap: 2.4rem;
   align-items: center;
   margin-bottom: 4.8rem;
-  padding: 0 13rem 0 13rem;
 }
 
 .titleBar hr {
@@ -420,4 +452,39 @@
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--purple-light);
+}
+
+/* Media */ 
+
+@media screen and (max-width:1350px) {
+  .cardWrapper p {
+    padding-right: 12rem;
+  }
+
+  .sectionTwo h2 {
+    padding-right: 14rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .cardsDiv {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .cardWrapper p {
+    padding-right: none;
+  }
+
+  .sectionTwo h2 {
+    padding-right: 1rem;
+  }
 }
