@@ -37,7 +37,20 @@ export default function Home() {
 
       <br></br>
 
-      <Bar logos={logos}></Bar>
+      <div className={styles.bar}>
+        <div className={styles.titleBar}>
+          <hr></hr>
+          <h3>In the pipeline</h3>
+          <hr></hr>
+        </div >
+        <div className={styles.barImg}>
+          <Bar src="harvard-logo.svg" alt="harvard university logo"></Bar>
+          <Bar src="microsoft-logo.svg" alt="microsoft logo"></Bar>
+          <Bar src="nasa-logo.svg" alt="Nasa logo"></Bar>
+          <Bar src="yale-logo.svg" alt="Yale university logo"></Bar>
+          <Bar src="payoneer-logo.svg" alt="payoneer logo"></Bar>
+        </div>
+      </div>
 
       <br></br>
 
@@ -117,21 +130,33 @@ export default function Home() {
 
       <br></br>
 
-        <div className={styles.backgroundSectionFive}>
-        </div>
       <div className={styles.sectionFive}>
+        <div className={styles.backgroundSectionFive}></div>
         <br></br>
-          <div className={styles.mainContentFive}>
-            <img src='logo-full.svg'></img>
-            <h2>Brought to you by DeFiPie</h2>
-            <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
-            <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
-          </div>
+        <div className={styles.mainContentFive}>
+          <img src='logo-full.svg'></img>
+          <h2>Brought to you by DeFiPie</h2>
+          <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
+          <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
+        </div>
       </div>
 
       <br></br>
 
-      <Bar logos={logosTwo}></Bar>
+        <div className={styles.bar}>
+        <div className={styles.titleBar}>
+          <hr></hr>
+          <h3>In the pipeline</h3>
+          <hr></hr>
+        </div >
+        <div className={styles.barImg}>
+          <Bar src="harvard-logo.svg" alt="harvard university logo"></Bar>
+          <Bar src="microsoft-logo.svg" alt="microsoft logo"></Bar>
+          <Bar src="nasa-logo.svg" alt="Nasa logo"></Bar>
+          <Bar src="yale-logo.svg" alt="Yale university logo"></Bar>
+          <Bar src="payoneer-logo.svg" alt="payoneer logo"></Bar>
+        </div>
+      </div>
 
       <br></br>
 
