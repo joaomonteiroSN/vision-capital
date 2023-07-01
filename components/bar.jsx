@@ -3,9 +3,17 @@ import styles from '../src/app/page.module.css'
 
 export function Bar(props) {
 
+    const logos = props.logos;
     return (
-        <div>
-            <img src={props.src} alt={props.alt} />
+        <div className={styles.bar}>
+            <div className={styles.titleBar}>
+                <hr></hr>
+                <h3>{props.h3}</h3>
+                <hr></hr>
+            </div >
+            <div className={styles.barImg}>
+                {logos?.map(logo => <img src={logo.src}></img>)}
+            </div>
         </div>
     );
 }

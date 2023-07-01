@@ -41,7 +41,6 @@
   background-size: fill;
   background-position: center center;
   background-color: var(--back-color);
-  outline: 1px solid red;
   padding: 16.8rem 0 16.8rem 0;
 }
 
@@ -107,11 +106,9 @@
   align-items: end;
   flex-direction: column;
   gap: 1.2rem;
-  outline: 1px solid red;
 }
 
 .cardWrapper {
-  outline: 1px solid red;
   display: flex;
   gap: 1.2rem;
   max-width: 58rem;
@@ -457,7 +454,6 @@
 .bar {
   max-width: 1440px;
   margin: auto;
-  outline: 1px solid red;
   padding: 0 13rem 0 13rem;
 }
 

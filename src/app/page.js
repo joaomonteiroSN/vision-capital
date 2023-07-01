@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logos from '../../data'
+import { logos } from '../../data'
 import { logosTwo } from '../../data'
 import styles from './page.module.css'
 import { DarkButton } from '../../components/button-dark'
@@ -37,20 +37,7 @@ export default function Home() {
 
       <br></br>
 
-      <div className={styles.bar}>
-        <div className={styles.titleBar}>
-          <hr></hr>
-          <h3>In the pipeline</h3>
-          <hr></hr>
-        </div >
-        <div className={styles.barImg}>
-          <Bar src="harvard-logo.svg" alt="harvard university logo"></Bar>
-          <Bar src="microsoft-logo.svg" alt="microsoft logo"></Bar>
-          <Bar src="nasa-logo.svg" alt="Nasa logo"></Bar>
-          <Bar src="yale-logo.svg" alt="Yale university logo"></Bar>
-          <Bar src="payoneer-logo.svg" alt="payoneer logo"></Bar>
-        </div>
-      </div>
+      <Bar h3="In the Pipeline" logos={logos}></Bar>
 
       <br></br>
 
@@ -143,20 +130,10 @@ export default function Home() {
 
       <br></br>
 
-        <div className={styles.bar}>
-        <div className={styles.titleBar}>
-          <hr></hr>
-          <h3>In the pipeline</h3>
-          <hr></hr>
-        </div >
-        <div className={styles.barImg}>
-          <Bar src="harvard-logo.svg" alt="harvard university logo"></Bar>
-          <Bar src="microsoft-logo.svg" alt="microsoft logo"></Bar>
-          <Bar src="nasa-logo.svg" alt="Nasa logo"></Bar>
-          <Bar src="yale-logo.svg" alt="Yale university logo"></Bar>
-          <Bar src="payoneer-logo.svg" alt="payoneer logo"></Bar>
-        </div>
-      </div>
+
+      
+      <Bar h3="Brought to you by DeFiPie in partnership with" logos={logosTwo}></Bar>
+
 
       <br></br>
 
