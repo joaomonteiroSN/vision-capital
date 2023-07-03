@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { logos } from '../../data'
 import { logosTwo } from '../../data'
 import styles from './page.module.css'
@@ -18,7 +17,7 @@ export default function Home() {
             <a className={styles.click} href='_blank'>For Projects</a>
             <a className={styles.click} href='_blank'>For Investors</a>
           </nav>
-          <DarkButton s="Join Now"></DarkButton>
+          <DarkButton text="Join Now"></DarkButton>
         </div>
       </header>
 
@@ -29,8 +28,8 @@ export default function Home() {
           <h1 className={styles.title}>Vision Capital</h1>
           <p className={styles.pTitle}>The right way to fund and incubate your DeFi startup</p>
           <div className={styles.buttonsTitle}>
-            <DarkButton s="I Need Funding"></DarkButton>
-            <LightButton s="Become an Investor" ></LightButton>
+            <DarkButton text="I Need Funding"></DarkButton>
+            <LightButton text="Become an Investor" ></LightButton>
           </div>
         </div>
       </div>
@@ -81,8 +80,8 @@ export default function Home() {
             </div>
 
             <div className={styles.sectionThreeButtons}>
-              <DarkButton s="I Need Funding"></DarkButton>
-              <LightButton s="Learn More" ></LightButton>
+              <DarkButton text="I Need Funding"></DarkButton>
+              <LightButton text="Learn More" ></LightButton>
             </div>
           </div>
         </div>
@@ -109,7 +108,7 @@ export default function Home() {
               <ToDoCard p="Yield farming rewards in PIE" span="(up to 100% a year)"></ToDoCard>
             </div>
 
-            <DarkButton s="Become an Investor"></DarkButton>
+            <DarkButton text="Become an Investor"></DarkButton>
 
           </div>
         </div>
@@ -122,7 +121,7 @@ export default function Home() {
         <br></br>
         <div className={styles.mainContentFive}>
           <img src='logo-full.svg'></img>
-          <h2>Brought to you by DeFiPie</h2>
+          <h2> <span>Brought to you</span> by DeFiPie</h2>
           <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and trading. We have a strong development and marketing team and an active, constantly growing community.</p>
           <p>Project incubation is a natural next step: now that we've done it ourselves, we want to help other quality projects to achieve success. </p>
         </div>
@@ -166,9 +165,8 @@ export default function Home() {
                   <label htmlFor="teleName">Telegram name</label>
                   <input type='text' id='teleName' name='teleName'></input>
                 </div>
-
               </form>
-              <DarkButton s="Send"></DarkButton>
+              <DarkButton text="Send"></DarkButton>
             </div>
             <div className={styles.rightSide}>
               <div className={styles.socialBar}>

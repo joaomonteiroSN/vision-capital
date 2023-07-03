@@ -28,13 +28,17 @@
   gap: 2.4rem;
 }
 
+.aNav a {
+  color: var(--blue-dark);
+}
+
 /* header-end */
 
 /* Section - 1 */
 
 .sectionOne {
   height: auto;
-  margin: 0 auto 20rem auto;
+  margin: 0 auto 10rem auto;
   max-width: 1420px;
   background-image: url('../../public/bg.svg');
   background-repeat: no-repeat;
@@ -85,7 +89,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  margin: 20rem auto;
+  margin: 10rem auto;
   padding: 0 13rem 0 13rem;
 }
 
@@ -241,8 +245,9 @@
 }
 
 .sectionFour {
+  margin: auto;
   border-radius: 0 25rem 0 0;
-  width: 100%;
+  max-width: 1440px;
   padding: 20rem 0 20rem 0;
 }
 
@@ -266,13 +271,14 @@
 
 .sectionFive {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 10rem;
 }
 
 .mainContentFive {
   margin: 12.7rem 15rem 20rem 26rem;
   font-size: 1.8rem;
   font-weight: 400;
+  max-width: 57.9rem;
 }
 
 .mainContentFive img {
@@ -281,6 +287,13 @@
 
 .mainContentFive h2 {
   margin-bottom: 5.2rem;
+}
+
+.mainContentFive span {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  padding-right: 9rem;
 }
 
 .mainContentFive p:first-of-type {
@@ -318,10 +331,13 @@
   max-width: cover;
   width: 100%;
   background-color: var(--blue-dark);
+  margin-top: 10rem;
 }
 
 .sectionSix {
   margin-top: 20rem;
+  max-width: 1440px;
+  margin: auto;
   padding: 17.9rem 13rem 17.9rem 13rem;
 }
 
@@ -333,6 +349,8 @@
 
 .leftSide {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .imgSectionSix {
@@ -405,7 +423,7 @@
   text-decoration-line: underline;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 800px) {
   .mainSectionSix {
     flex-direction: column;
     align-items: center;
@@ -417,7 +435,11 @@
   }
 }
 
-@media screen and (max-width: 45rem) {
+@media screen and (max-width: 450px) {
+  .sectionSix, .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive {
+    padding: 17.9rem 2rem 17.9rem 2rem;
+  }
+
   .formMain {
     grid-template-columns: 1fr;
   }
@@ -453,19 +475,20 @@
 
 .bar {
   max-width: 1440px;
-  margin: auto;
+  margin: 10rem auto;
   padding: 0 13rem 0 13rem;
 }
 
 .titleBar {
   display: flex;
-  gap: 2.4rem;
   align-items: center;
+  gap: 2.4rem;
   margin-bottom: 4.8rem;
 }
 
 .titleBar hr {
-  width: 100%;
+  width: auto;
+  flex-grow: 4;
   height: 0.2rem;
   background-color: var(--line-color);
   border-width: 0;
@@ -477,7 +500,9 @@
   font-weight: 500;
   line-height: 3.6rem;
   color: var(--font-color);
-  flex: none;
+  /* width: 100%; */
+  
+  /* flex: none; */
 }
 
 .barImg {
