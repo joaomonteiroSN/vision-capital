@@ -6,7 +6,9 @@
 
 /* header */
 
-.header, .nav, .aNav {
+.header,
+.nav,
+.aNav {
   display: flex;
   flex-wrap: wrap;
 }
@@ -107,7 +109,7 @@
 
 .cardsDiv {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   gap: 1.2rem;
 }
@@ -319,6 +321,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .mainContentFive {
+    margin: 0 auto;
+  }
+}
+
 /* Section 5 end */
 
 /* Section 6 */
@@ -403,7 +411,7 @@
 .rightSide {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 2.4rem;
   margin-top: auto;
 }
@@ -436,12 +444,39 @@
 }
 
 @media screen and (max-width: 450px) {
-  .sectionSix, .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive {
+
+  .sectionSix,
+  .sectionOne,
+  .sectionTwo,
+  .sectionThree,
+  .sectionFour,
+  .sectionFive {
     padding: 17.9rem 2rem 17.9rem 2rem;
+  }
+
+  .mainSectionSix {
+    align-items: center;
+  }
+
+  .mainContentThree {
+    margin: 0 2rem;
   }
 
   .formMain {
     grid-template-columns: 1fr;
+    margin: 6.4rem auto;
+  }
+
+  .leftSide {
+    align-items: center;
+  }
+
+  .rightSide {
+    align-items: center;
+  }
+
+  .cardToDo {
+    max-width: 100%;
   }
 }
 
@@ -500,9 +535,6 @@
   font-weight: 500;
   line-height: 3.6rem;
   color: var(--font-color);
-  /* width: 100%; */
-  
-  /* flex: none; */
 }
 
 .barImg {
@@ -512,6 +544,20 @@
   column-gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+  .bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+  }
+
+  .titleBar hr {
+    display: none;
+  }
 }
 
 /* toDocard */
